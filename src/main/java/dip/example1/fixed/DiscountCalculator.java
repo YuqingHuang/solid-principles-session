@@ -1,7 +1,17 @@
-package dip.example1.fixed;
+class Rectangle
+{
+	protected int m_width;
+	protected int m_height;
 
-import dip.example1.Order;
+	public void setWidth(int width){
+		m_width = width;
+	}
 
-public interface DiscountCalculator {
-    double calculateDiscount(Order order);
+	public void setHeight(int height){
+		m_height = height;
+	}
+
+	public int getArea(){
+		return m_width * m_height;
+	}	
 }
